@@ -15,6 +15,9 @@
 		AF4EE10C292F425D00A45865 /* locationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE10B292F425D00A45865 /* locationUITests.swift */; };
 		AF4EE10E292F425D00A45865 /* locationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE10D292F425D00A45865 /* locationUITestsLaunchTests.swift */; };
 		AF4EE11C292F44C700A45865 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = AF4EE11B292F44C700A45865 /* Factory */; };
+		AF4EE11F292F44F600A45865 /* AppInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE11E292F44F600A45865 /* AppInjection.swift */; };
+		AF4EE123292F458B00A45865 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE122292F458B00A45865 /* HomeView.swift */; };
+		AF4EE125292F45A200A45865 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE124292F45A200A45865 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		AF4EE107292F425D00A45865 /* locationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4EE10B292F425D00A45865 /* locationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationUITests.swift; sourceTree = "<group>"; };
 		AF4EE10D292F425D00A45865 /* locationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF4EE11E292F44F600A45865 /* AppInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInjection.swift; sourceTree = "<group>"; };
+		AF4EE122292F458B00A45865 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AF4EE124292F45A200A45865 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 		AF4EE0EF292F425A00A45865 /* location */ = {
 			isa = PBXGroup;
 			children = (
+				AF4EE121292F457700A45865 /* viewModel */,
+				AF4EE120292F457000A45865 /* views */,
+				AF4EE11D292F44E200A45865 /* di */,
 				AF4EE0F0292F425A00A45865 /* locationApp.swift */,
 				AF4EE0F2292F425A00A45865 /* ContentView.swift */,
 				AF4EE0F4292F425C00A45865 /* Assets.xcassets */,
@@ -127,6 +136,30 @@
 				AF4EE10D292F425D00A45865 /* locationUITestsLaunchTests.swift */,
 			);
 			path = locationUITests;
+			sourceTree = "<group>";
+		};
+		AF4EE11D292F44E200A45865 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				AF4EE11E292F44F600A45865 /* AppInjection.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		AF4EE120292F457000A45865 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AF4EE122292F458B00A45865 /* HomeView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		AF4EE121292F457700A45865 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AF4EE124292F45A200A45865 /* HomeViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF4EE0F3292F425A00A45865 /* ContentView.swift in Sources */,
+				AF4EE123292F458B00A45865 /* HomeView.swift in Sources */,
+				AF4EE11F292F44F600A45865 /* AppInjection.swift in Sources */,
+				AF4EE125292F45A200A45865 /* HomeViewModel.swift in Sources */,
 				AF4EE0F1292F425A00A45865 /* locationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
