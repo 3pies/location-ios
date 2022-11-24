@@ -14,6 +14,7 @@
 		AF4EE102292F425D00A45865 /* locationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE101292F425D00A45865 /* locationTests.swift */; };
 		AF4EE10C292F425D00A45865 /* locationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE10B292F425D00A45865 /* locationUITests.swift */; };
 		AF4EE10E292F425D00A45865 /* locationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE10D292F425D00A45865 /* locationUITestsLaunchTests.swift */; };
+		AF4EE11C292F44C700A45865 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = AF4EE11B292F44C700A45865 /* Factory */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4EE11C292F44C700A45865 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = location;
+			packageProductDependencies = (
+				AF4EE11B292F44C700A45865 /* Factory */,
+			);
 			productName = location;
 			productReference = AF4EE0ED292F425A00A45865 /* location.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = AF4EE0E4292F425A00A45865;
+			packageReferences = (
+				AF4EE11A292F44C700A45865 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			productRefGroup = AF4EE0EE292F425A00A45865 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF4EE11A292F44C700A45865 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF4EE11B292F44C700A45865 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF4EE11A292F44C700A45865 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF4EE0E5292F425A00A45865 /* Project object */;
 }
