@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF15EAFC2931E7330092995E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF15EAFB2931E7330092995E /* LocationManager.swift */; };
 		AF4EE0F1292F425A00A45865 /* locationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0F0292F425A00A45865 /* locationApp.swift */; };
 		AF4EE0F3292F425A00A45865 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0F2292F425A00A45865 /* ContentView.swift */; };
 		AF4EE0F5292F425C00A45865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4EE0F4292F425C00A45865 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF15EAFB2931E7330092995E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		AF4EE0ED292F425A00A45865 /* location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = location.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4EE0F0292F425A00A45865 /* locationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationApp.swift; sourceTree = "<group>"; };
 		AF4EE0F2292F425A00A45865 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +81,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF15EAF92931E7030092995E /* services */ = {
+			isa = PBXGroup;
+			children = (
+				AF15EAFA2931E70A0092995E /* location */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		AF15EAFA2931E70A0092995E /* location */ = {
+			isa = PBXGroup;
+			children = (
+				AF15EAFB2931E7330092995E /* LocationManager.swift */,
+			);
+			path = location;
+			sourceTree = "<group>";
+		};
 		AF4EE0E4292F425A00A45865 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +120,7 @@
 		AF4EE0EF292F425A00A45865 /* location */ = {
 			isa = PBXGroup;
 			children = (
+				AF15EAF92931E7030092995E /* services */,
 				AF4EE121292F457700A45865 /* viewModel */,
 				AF4EE120292F457000A45865 /* views */,
 				AF4EE11D292F44E200A45865 /* di */,
@@ -300,6 +319,7 @@
 			files = (
 				AF4EE0F3292F425A00A45865 /* ContentView.swift in Sources */,
 				AF4EE123292F458B00A45865 /* HomeView.swift in Sources */,
+				AF15EAFC2931E7330092995E /* LocationManager.swift in Sources */,
 				AF4EE11F292F44F600A45865 /* AppInjection.swift in Sources */,
 				AF4EE125292F45A200A45865 /* HomeViewModel.swift in Sources */,
 				AF4EE0F1292F425A00A45865 /* locationApp.swift in Sources */,
@@ -464,6 +484,7 @@
 				DEVELOPMENT_TEAM = PYH5XH3SJ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get the user location and show in screen";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -493,6 +514,7 @@
 				DEVELOPMENT_TEAM = PYH5XH3SJ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get the user location and show in screen";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

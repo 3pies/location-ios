@@ -10,6 +10,10 @@ import Factory
 
 extension Container {
     
+    //Services
+    static let locationManager = Factory(scope: .singleton) {
+        LocationManager()
+    }
     
     //ViewModels
     static let homeViewModel = Factory() {
