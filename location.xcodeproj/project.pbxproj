@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		AF15EAFC2931E7330092995E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF15EAFB2931E7330092995E /* LocationManager.swift */; };
+		AF2F7F7D295ABD520006CFDC /* Configuration.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AF2F7F7C295ABD520006CFDC /* Configuration.xcconfig */; };
+		AF2F7F80295ABDF50006CFDC /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7F7F295ABDF50006CFDC /* Configuration.swift */; };
+		AF2F7F83295ABED70006CFDC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7F82295ABED70006CFDC /* Location.swift */; };
+		AF2F7F86295ABF170006CFDC /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AF2F7F85295ABF170006CFDC /* Realm */; };
+		AF2F7F88295ABF170006CFDC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF2F7F87295ABF170006CFDC /* RealmSwift */; };
+		AF2F7F8B295ABF6B0006CFDC /* RealmDataManager in Frameworks */ = {isa = PBXBuildFile; productRef = AF2F7F8A295ABF6B0006CFDC /* RealmDataManager */; };
+		AF2F7F8E295ABFD80006CFDC /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7F8D295ABFD80006CFDC /* AppState.swift */; };
+		AF2F7F90295AC8360006CFDC /* AsyncDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7F8F295AC8360006CFDC /* AsyncDataManager.swift */; };
+		AF2F7F93295ACC9E0006CFDC /* LocationsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7F92295ACC9E0006CFDC /* LocationsRepository.swift */; };
+		AF2F7F96295ACCFB0006CFDC /* LocationVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2F7F95295ACCFB0006CFDC /* LocationVO.swift */; };
 		AF4EE0F1292F425A00A45865 /* locationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0F0292F425A00A45865 /* locationApp.swift */; };
 		AF4EE0F3292F425A00A45865 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4EE0F2292F425A00A45865 /* ContentView.swift */; };
 		AF4EE0F5292F425C00A45865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF4EE0F4292F425C00A45865 /* Assets.xcassets */; };
@@ -40,6 +50,14 @@
 
 /* Begin PBXFileReference section */
 		AF15EAFB2931E7330092995E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AF2F7F7C295ABD520006CFDC /* Configuration.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Configuration.xcconfig; sourceTree = "<group>"; };
+		AF2F7F7E295ABDA30006CFDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF2F7F7F295ABDF50006CFDC /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		AF2F7F82295ABED70006CFDC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AF2F7F8D295ABFD80006CFDC /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		AF2F7F8F295AC8360006CFDC /* AsyncDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncDataManager.swift; sourceTree = "<group>"; };
+		AF2F7F92295ACC9E0006CFDC /* LocationsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsRepository.swift; sourceTree = "<group>"; };
+		AF2F7F95295ACCFB0006CFDC /* LocationVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVO.swift; sourceTree = "<group>"; };
 		AF4EE0ED292F425A00A45865 /* location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = location.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4EE0F0292F425A00A45865 /* locationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = locationApp.swift; sourceTree = "<group>"; };
 		AF4EE0F2292F425A00A45865 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF2F7F88295ABF170006CFDC /* RealmSwift in Frameworks */,
+				AF2F7F86295ABF170006CFDC /* Realm in Frameworks */,
+				AF2F7F8B295ABF6B0006CFDC /* RealmDataManager in Frameworks */,
 				AF4EE11C292F44C700A45865 /* Factory in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,7 +105,9 @@
 		AF15EAF92931E7030092995E /* services */ = {
 			isa = PBXGroup;
 			children = (
+				AF2F7F8C295ABFC20006CFDC /* database */,
 				AF15EAFA2931E70A0092995E /* location */,
+				AF2F7F7F295ABDF50006CFDC /* Configuration.swift */,
 			);
 			path = services;
 			sourceTree = "<group>";
@@ -95,6 +118,40 @@
 				AF15EAFB2931E7330092995E /* LocationManager.swift */,
 			);
 			path = location;
+			sourceTree = "<group>";
+		};
+		AF2F7F81295ABEBB0006CFDC /* model */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F7F94295ACCE10006CFDC /* vo */,
+				AF2F7F82295ABED70006CFDC /* Location.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AF2F7F8C295ABFC20006CFDC /* database */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F7F8D295ABFD80006CFDC /* AppState.swift */,
+				AF2F7F8F295AC8360006CFDC /* AsyncDataManager.swift */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		AF2F7F91295ACC7B0006CFDC /* repositories */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F7F92295ACC9E0006CFDC /* LocationsRepository.swift */,
+			);
+			path = repositories;
+			sourceTree = "<group>";
+		};
+		AF2F7F94295ACCE10006CFDC /* vo */ = {
+			isa = PBXGroup;
+			children = (
+				AF2F7F95295ACCFB0006CFDC /* LocationVO.swift */,
+			);
+			path = vo;
 			sourceTree = "<group>";
 		};
 		AF4EE0E4292F425A00A45865 = {
@@ -120,6 +177,9 @@
 		AF4EE0EF292F425A00A45865 /* location */ = {
 			isa = PBXGroup;
 			children = (
+				AF2F7F91295ACC7B0006CFDC /* repositories */,
+				AF2F7F81295ABEBB0006CFDC /* model */,
+				AF2F7F7E295ABDA30006CFDC /* Info.plist */,
 				AF15EAF92931E7030092995E /* services */,
 				AF4EE121292F457700A45865 /* viewModel */,
 				AF4EE120292F457000A45865 /* views */,
@@ -128,6 +188,7 @@
 				AF4EE0F2292F425A00A45865 /* ContentView.swift */,
 				AF4EE0F4292F425C00A45865 /* Assets.xcassets */,
 				AF4EE0F6292F425C00A45865 /* Preview Content */,
+				AF2F7F7C295ABD520006CFDC /* Configuration.xcconfig */,
 			);
 			path = location;
 			sourceTree = "<group>";
@@ -199,6 +260,9 @@
 			name = location;
 			packageProductDependencies = (
 				AF4EE11B292F44C700A45865 /* Factory */,
+				AF2F7F85295ABF170006CFDC /* Realm */,
+				AF2F7F87295ABF170006CFDC /* RealmSwift */,
+				AF2F7F8A295ABF6B0006CFDC /* RealmDataManager */,
 			);
 			productName = location;
 			productReference = AF4EE0ED292F425A00A45865 /* location.app */;
@@ -274,6 +338,8 @@
 			mainGroup = AF4EE0E4292F425A00A45865;
 			packageReferences = (
 				AF4EE11A292F44C700A45865 /* XCRemoteSwiftPackageReference "Factory" */,
+				AF2F7F84295ABF170006CFDC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				AF2F7F89295ABF6B0006CFDC /* XCRemoteSwiftPackageReference "RealmDataManager-Swift" */,
 			);
 			productRefGroup = AF4EE0EE292F425A00A45865 /* Products */;
 			projectDirPath = "";
@@ -293,6 +359,7 @@
 			files = (
 				AF4EE0F8292F425C00A45865 /* Preview Assets.xcassets in Resources */,
 				AF4EE0F5292F425C00A45865 /* Assets.xcassets in Resources */,
+				AF2F7F7D295ABD520006CFDC /* Configuration.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +386,12 @@
 			files = (
 				AF4EE0F3292F425A00A45865 /* ContentView.swift in Sources */,
 				AF4EE123292F458B00A45865 /* HomeView.swift in Sources */,
+				AF2F7F83295ABED70006CFDC /* Location.swift in Sources */,
+				AF2F7F8E295ABFD80006CFDC /* AppState.swift in Sources */,
+				AF2F7F90295AC8360006CFDC /* AsyncDataManager.swift in Sources */,
+				AF2F7F96295ACCFB0006CFDC /* LocationVO.swift in Sources */,
+				AF2F7F80295ABDF50006CFDC /* Configuration.swift in Sources */,
+				AF2F7F93295ACC9E0006CFDC /* LocationsRepository.swift in Sources */,
 				AF15EAFC2931E7330092995E /* LocationManager.swift in Sources */,
 				AF4EE11F292F44F600A45865 /* AppInjection.swift in Sources */,
 				AF4EE125292F45A200A45865 /* HomeViewModel.swift in Sources */,
@@ -361,6 +434,7 @@
 /* Begin XCBuildConfiguration section */
 		AF4EE10F292F425D00A45865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2F7F7C295ABD520006CFDC /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -421,6 +495,7 @@
 		};
 		AF4EE110292F425D00A45865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2F7F7C295ABD520006CFDC /* Configuration.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -475,6 +550,7 @@
 		};
 		AF4EE112292F425D00A45865 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2F7F7C295ABD520006CFDC /* Configuration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,6 +560,7 @@
 				DEVELOPMENT_TEAM = PYH5XH3SJ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = location/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get the user location and show in screen";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -505,6 +582,7 @@
 		};
 		AF4EE113292F425D00A45865 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF2F7F7C295ABD520006CFDC /* Configuration.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -514,6 +592,7 @@
 				DEVELOPMENT_TEAM = PYH5XH3SJ7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = location/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Get the user location and show in screen";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -651,6 +730,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AF2F7F84295ABF170006CFDC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		AF2F7F89295ABF6B0006CFDC /* XCRemoteSwiftPackageReference "RealmDataManager-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/3pies/RealmDataManager-Swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		AF4EE11A292F44C700A45865 /* XCRemoteSwiftPackageReference "Factory" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hmlongco/Factory";
@@ -662,6 +757,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AF2F7F85295ABF170006CFDC /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2F7F84295ABF170006CFDC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		AF2F7F87295ABF170006CFDC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2F7F84295ABF170006CFDC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		AF2F7F8A295ABF6B0006CFDC /* RealmDataManager */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF2F7F89295ABF6B0006CFDC /* XCRemoteSwiftPackageReference "RealmDataManager-Swift" */;
+			productName = RealmDataManager;
+		};
 		AF4EE11B292F44C700A45865 /* Factory */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AF4EE11A292F44C700A45865 /* XCRemoteSwiftPackageReference "Factory" */;

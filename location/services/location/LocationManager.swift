@@ -36,13 +36,13 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
         lastLocation = location
-        print(#function, location)
+        //print(#function, location)
     }
     
     //Notifica sobre cambios en el estado de autorización
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
         locationStatus = manager.authorizationStatus
-        print(#function, statusString)
+        //print(#function, statusString)
     }
     
     //Transformamos el estado a un tipo string
@@ -61,7 +61,7 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print(error.localizedDescription)
+        //print(error.localizedDescription)
     }
     
 }

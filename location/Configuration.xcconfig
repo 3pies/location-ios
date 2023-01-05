@@ -1,0 +1,10 @@
+//
+//  Configuration.xcconfig
+//  location
+//
+//  Created by Daniel Ferrer on 27/12/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+REALM_SYNC_APP_ID=app_id

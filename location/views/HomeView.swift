@@ -26,9 +26,23 @@ struct HomeView: View {
                 Spacer()
             }
             
+            HStack {
+                Text("APP STATE: \(viewModel.isAppLoaded.description)")
+                
+            }
+            
+            LazyVStack(spacing: 0) {
+                Text("Elementos: \(viewModel.locations.count)")
+                ForEach(viewModel.locations) { loc in
+                    Text(loc.title)
+                }
+                
+            }
+            
             Spacer()
         }.onAppear {
             viewModel.loadLocation()
+            viewModel.initDatabase()
         }
     }
 }

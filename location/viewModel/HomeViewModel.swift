@@ -15,8 +15,17 @@ class HomeViewModel: ObservableObject {
     @Injected(Container.locationManager)
     private var locationManager: LocationManager
     
+    @Injected(Container.locationsRepository)
+    private var repository: LocationsRepository
+    
+    @Injected(Container.appState)
+    private var appState: AppState
+    
     @Published var location: CLLocation? = nil
     @Published var locationStatus: CLAuthorizationStatus? = nil
+    
+    @Published var isAppLoaded: Bool = false
+    @Published var locations: [LocationVO] = []
     
     private var cancellableSet: Set<AnyCancellable> = []
     
@@ -30,6 +39,21 @@ class HomeViewModel: ObservableObject {
         locationManager.$locationStatus
             .assign(to: \.locationStatus, on: self)
             .store(in: &cancellableSet)
+    }
+    
+    func initDatabase() {
+        
+        appState.$isAppLoaded
+            .assign(to: \.isAppLoaded, on: self)
+            .store(in: &cancellableSet)
+        
+        repository.$locations
+            .assign(to: \.locations, on: self)
+            .store(in: &cancellableSet)
+        
+        repository.loadLocations()
+        
+        
     }
     
 }
